@@ -1,0 +1,45 @@
+<!-- doc+tab or shift+! or html:5 or Emmet-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css"></link>
+</head>
+<body>
+    <h1>Hello from top of the root</h1> 
+    <div id="root">
+        <!-- <h1>Hello World created using html!</h1>  -->
+
+
+        <!-- creating h1 tag using JS , we will use a script tag for that-->
+         <!-- <script>
+            const heading=document.createElement("h1")
+            heading.innerText="Hello World from JS !"
+
+            const root = document.getElementById("root")
+            // heading will go as a child in this root using this appendChild() method
+            root.appendChild(heading)
+
+         </script> -->
+
+
+         <!-- Write this using react using these links are app is configured with react -->
+
+         <!-- if something is already there in the root then this root.render() will replace that entire thing  -->
+        <h1>Pre existing tag which will be replaced by the root.render() content</h1>
+        <!-- react will be rendered only inside this root  -->
+         <script crossorigin 
+         src="https://unpkg.com/react@18/umd/react.development.js"> // this is the url where the react is hosted, this the core react file - try writing React in the console 
+        </script>
+         <script crossorigin 
+         src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"> // this url is used for DOM operations or manipulation - try writing ReactDOM in the console
+        </script>
+        <script src="./App.js">
+        </script>
+        
+    </div>
+    <h1>Hello from below of the root</h1>
+</body>
+</html>
